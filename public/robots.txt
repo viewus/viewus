@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://viewus.github.io/viewus/sitemap.xml

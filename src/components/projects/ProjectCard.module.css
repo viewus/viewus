@@ -1,0 +1,96 @@
+.card {
+  padding: 0 !important;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+}
+
+.featured .imageWrap {
+  flex: 1;
+  min-height: 220px;
+}
+
+.featured .imageWrap img,
+.featured .imageWrap > div {
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+.featured .title {
+  font-size: 1.5rem;
+}
+
+.featured .overview {
+  -webkit-line-clamp: 4;
+}
+
+.imageWrap {
+  position: relative;
+  margin: 0.75rem 0.75rem 0;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.category {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-full);
+  background: rgba(10, 14, 22, 0.65);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.title {
+  font-size: 1.12rem;
+  color: var(--color-text);
+}
+
+.overview {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-primary-strong);
+}

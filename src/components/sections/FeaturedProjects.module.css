@@ -1,0 +1,42 @@
+.section {
+  padding-block: clamp(2.25rem, 4.5vw, 3.75rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, minmax(200px, auto));
+  grid-template-areas:
+    'hero hero side1'
+    'hero hero side2';
+  gap: 1.5rem;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.side1 {
+  grid-area: side1;
+}
+
+.side2 {
+  grid-area: side2;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'hero'
+      'side1'
+      'side2';
+  }
+}

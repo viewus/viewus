@@ -1,0 +1,9 @@
+.main {
+  padding-top: var(--nav-clearance);
+}
+
+@media (max-width: 680px) {
+  .main {
+    padding-bottom: 5rem;
+  }
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "enterprise-crm-platform",
+    "title": "Enterprise CRM & Client Portal",
+    "category": "Full-Stack Applications",
+    "overview": "A multi-tenant CRM platform giving sales teams a unified view of clients, deals, and support tickets, with a dedicated client-facing self-service portal.",
+    "problem": "The client managed customers across spreadsheets, email threads, and a support inbox with no shared source of truth, causing dropped follow-ups and duplicated work across teams.",
+    "solution": "Designed and built a role-based CRM with a React/TypeScript frontend and a Node.js REST API, backed by a normalized PostgreSQL schema, with a separate authenticated portal for clients to track their own projects and tickets.",
+    "architecture": "React SPA talking to a Node.js/Express API over REST, JWT-based auth with role-based access control, PostgreSQL for relational data, Redis for session and rate-limit caching, deployed on AWS EC2 behind Nginx with Docker Compose.",
+    "tech": ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Redis", "Docker", "AWS", "Nginx"],
+    "features": [
+      "Role-based dashboards for admins, sales reps, and clients",
+      "Deal pipeline with stage tracking and activity history",
+      "Client self-service portal with ticket tracking",
+      "REST API with versioned endpoints and rate limiting",
+      "Audit-logged actions for compliance"
+    ],
+    "image": "",
+    "liveUrl": "",
+    "repoUrl": "",
+    "featured": true
+  },
+  {
+    "slug": "cicd-kubernetes-pipeline",
+    "title": "Containerized CI/CD Pipeline on Kubernetes",
+    "category": "DevOps",
+    "overview": "A fully automated build-test-deploy pipeline that takes a commit from pull request to a running pod in a Kubernetes cluster with zero manual steps.",
+    "problem": "Releases were deployed manually by SSH-ing into a server and pulling the latest code, leading to inconsistent environments and occasional downtime during deploys.",
+    "solution": "Containerized the application with Docker, wrote a GitHub Actions pipeline to build, test, and push images to a registry, and configured Kubernetes manifests with rolling updates and health checks for zero-downtime deployment.",
+    "architecture": "GitHub Actions for CI, Docker multi-stage builds, a private container registry, Kubernetes Deployments with readiness/liveness probes, Helm-style manifests, and Prometheus/Grafana for cluster monitoring.",
+    "tech": ["Docker", "Kubernetes", "GitHub Actions", "Terraform", "Prometheus", "Grafana", "AWS"],
+    "features": [
+      "Zero-downtime rolling deployments",
+      "Automated image build, scan, and push on every merge",
+      "Infrastructure provisioned via Terraform",
+      "Centralized metrics and alerting",
+      "Environment parity between staging and production"
+    ],
+    "image": "",
+    "liveUrl": "",
+    "repoUrl": "",
+    "featured": true
+  },
+  {
+    "slug": "cloud-migration-infra",
+    "title": "Cloud Infrastructure Migration & Hardening",
+    "category": "Cloud Infrastructure",
+    "overview": "Migrated a legacy shared-hosting application to a scalable, secured cloud infrastructure with automated backups and monitoring.",
+    "problem": "The application was running on aging shared hosting with no backup strategy, no monitoring, and frequent downtime during traffic spikes.",
+    "solution": "Re-architected the hosting setup on AWS using EC2 and RDS, introduced Nginx as a reverse proxy with SSL termination, automated nightly backups, and set up uptime and resource monitoring with alerting.",
+    "architecture": "AWS EC2 + RDS, Nginx reverse proxy with Let's Encrypt SSL, automated snapshot backups, CloudWatch and Grafana dashboards, Terraform-managed infrastructure for reproducibility.",
+    "tech": ["AWS", "Terraform", "Nginx", "Linux", "Grafana", "Ansible"],
+    "features": [
+      "Zero-downtime migration from legacy hosting",
+      "Automated nightly backups with retention policy",
+      "SSL and DNS fully automated and monitored",
+      "Infrastructure fully defined as code",
+      "Resource and uptime alerting"
+    ],
+    "image": "",
+    "liveUrl": "",
+    "repoUrl": "",
+    "featured": true
+  },
+  {
+    "slug": "field-service-mobile-app",
+    "title": "Field Service Mobile App with Admin Dashboard",
+    "category": "Web Development",
+    "overview": "A cross-platform field service app for technicians, paired with a web-based admin dashboard for scheduling and reporting.",
+    "problem": "Field technicians relied on phone calls and paper job sheets, making it impossible for dispatchers to see job status in real time.",
+    "solution": "Built a React Native app for technicians to receive, update, and close jobs in real time, backed by a Node.js API, with a React-based admin dashboard for dispatch and reporting.",
+    "architecture": "React Native mobile client, Node.js/Express REST API, MongoDB for flexible job-record storage, React admin dashboard, hosted on a Dockerized VPS behind Nginx.",
+    "tech": ["React Native", "Node.js", "MongoDB", "React", "Docker", "Nginx"],
+    "features": [
+      "Real-time job status updates from the field",
+      "Admin dashboard for scheduling and dispatch",
+      "Offline-tolerant sync for low-connectivity areas",
+      "Exportable reporting for completed jobs"
+    ],
+    "image": "",
+    "liveUrl": "",
+    "repoUrl": "",
+    "featured": false
+  }
+]

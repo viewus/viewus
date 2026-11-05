@@ -1,0 +1,205 @@
+.hero {
+  position: relative;
+  padding-top: clamp(1.5rem, 3vw, 2.5rem);
+  padding-bottom: clamp(2rem, 4vw, 3.5rem);
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: -220px;
+  left: 50%;
+  width: 900px;
+  height: 560px;
+  background: radial-gradient(closest-side, rgba(47, 111, 237, 0.26), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: drift-a 16s ease-in-out infinite alternate;
+}
+
+.glowSecondary {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  width: 640px;
+  height: 480px;
+  background: radial-gradient(closest-side, rgba(255, 138, 61, 0.2), transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+  animation: drift-b 13s ease-in-out infinite alternate;
+}
+
+.gridOverlay {
+  position: absolute;
+  inset: -40px -40px auto -40px;
+  height: 640px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 10%, black 20%, transparent 75%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes drift-a {
+  0% {
+    transform: translate(-56%, 0) scale(1);
+  }
+  100% {
+    transform: translate(-44%, 40px) scale(1.08);
+  }
+}
+
+@keyframes drift-b {
+  0% {
+    transform: translate(-30%, 20px) scale(1.05);
+  }
+  100% {
+    transform: translate(-62%, -10px) scale(0.95);
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 880px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-surface);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--color-accent);
+  margin-bottom: 1.75rem;
+}
+
+.headline {
+  font-size: clamp(2.3rem, 5.4vw, 4rem);
+  color: var(--color-text);
+}
+
+.description {
+  margin-top: 1.5rem;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  max-width: 680px;
+  color: var(--color-text-muted);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 2.5rem;
+}
+
+.bento {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'tagline tagline stat1 stat2'
+    'tagline tagline stat3 stat3';
+  gap: 1rem;
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.tile {
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.tile:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-3px);
+}
+
+.tagline {
+  grid-area: tagline;
+  display: flex;
+  align-items: center;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  background: linear-gradient(160deg, var(--color-surface-elevated) 0%, var(--color-surface) 100%);
+}
+
+.tagline p {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--color-text);
+  text-align: left;
+}
+
+.statTile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 1.25rem 1.4rem;
+}
+
+.stat1 {
+  grid-area: stat1;
+}
+
+.stat2 {
+  grid-area: stat2;
+}
+
+.stat3 {
+  grid-area: stat3;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.6rem;
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 2.6vw, 1.75rem);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--color-text-faint);
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'tagline tagline'
+      'stat1 stat2'
+      'stat3 stat3';
+  }
+
+  .tagline p {
+    text-align: center;
+  }
+
+  .tagline {
+    justify-content: center;
+  }
+}

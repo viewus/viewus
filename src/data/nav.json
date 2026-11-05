@@ -1,0 +1,9 @@
+[
+  { "label": "Home", "href": "#home" },
+  { "label": "About", "href": "#about" },
+  { "label": "Services", "href": "#services" },
+  { "label": "Technologies", "href": "#technologies" },
+  { "label": "Projects", "href": "#projects-preview" },
+  { "label": "Process", "href": "#process" },
+  { "label": "Contact", "href": "#contact" }
+]

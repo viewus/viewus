@@ -1,0 +1,72 @@
+.section {
+  padding-block: clamp(2.25rem, 4.5vw, 3.75rem);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  font-size: 1.02rem;
+}
+
+.paragraphs p {
+  color: var(--color-text-muted);
+}
+
+.highlightGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+}
+
+.highlightTile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.45;
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.highlightTile:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-3px);
+}
+
+.highlightTile:first-child {
+  grid-column: span 2;
+}
+
+.icon {
+  flex-shrink: 0;
+  color: var(--color-accent);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .highlightGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlightTile:first-child {
+    grid-column: span 1;
+  }
+}

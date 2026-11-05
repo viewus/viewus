@@ -1,0 +1,78 @@
+:root {
+  /* Surfaces */
+  --color-bg: #0a0e16;
+  --color-bg-alt: #0d1220;
+  --color-surface: #121829;
+  --color-surface-elevated: #161e33;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+
+  /* Text */
+  --color-text: #eef1f8;
+  --color-text-muted: #9aa6bd;
+  --color-text-faint: #6b7590;
+
+  /* Brand */
+  --color-primary: #3d7cf0;
+  --color-primary-strong: #6c9bff;
+  --color-accent: #ff8a3d;
+  --color-warning: #f5a524;
+
+  --gradient-brand: linear-gradient(135deg, #2f6fed 0%, #9757e0 52%, #ff8a3d 100%);
+  --gradient-surface: linear-gradient(180deg, rgba(61, 124, 240, 0.08) 0%, rgba(10, 14, 22, 0) 60%);
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Layout */
+  --container-width: 1240px;
+  --container-padding: clamp(1.25rem, 4vw, 3rem);
+  --nav-clearance: 92px;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 999px;
+
+  /* Shadow */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 0 1px rgba(47, 111, 237, 0.25), 0 8px 30px rgba(255, 138, 61, 0.14);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.18s var(--ease-out);
+  --transition-base: 0.3s var(--ease-out);
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --color-bg: #f5f7fb;
+  --color-bg-alt: #eef1f8;
+  --color-surface: #ffffff;
+  --color-surface-elevated: #ffffff;
+  --color-border: rgba(15, 23, 42, 0.09);
+  --color-border-strong: rgba(15, 23, 42, 0.16);
+
+  --color-text: #10172a;
+  --color-text-muted: #4b5873;
+  --color-text-faint: #7c879e;
+
+  --color-primary: #2f6fed;
+  --color-primary-strong: #1f54c4;
+  --color-accent: #e8690c;
+
+  --gradient-surface: linear-gradient(180deg, rgba(47, 111, 237, 0.06) 0%, rgba(245, 247, 251, 0) 60%);
+
+  --shadow-sm: 0 2px 8px rgba(16, 23, 42, 0.06);
+  --shadow-md: 0 8px 24px rgba(16, 23, 42, 0.08);
+  --shadow-lg: 0 20px 50px rgba(16, 23, 42, 0.12);
+  --shadow-glow: 0 0 0 1px rgba(47, 111, 237, 0.18), 0 8px 30px rgba(232, 105, 12, 0.14);
+
+  color-scheme: light;
+}

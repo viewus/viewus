@@ -1,0 +1,93 @@
+[
+  {
+    "id": "web-app-development",
+    "icon": "code",
+    "title": "Website & Application Development",
+    "summary": "Fully custom websites and web applications, built from scratch around your business — not a template, and totally customizable to how you work.",
+    "items": [
+      { "title": "Custom Website Development", "description": "Purpose-built websites tailored to your business logic, not a generic template." },
+      { "title": "Business & Corporate Websites", "description": "Professional, conversion-focused websites that represent your brand credibly." },
+      { "title": "Responsive Website Development", "description": "Pixel-accurate layouts across desktop, tablet, and mobile." },
+      { "title": "React.js Development", "description": "Modern, component-based frontends built with React and Vite." },
+      { "title": "WordPress Development", "description": "Custom WordPress builds, themes, and plugin development." },
+      { "title": "Custom WordPress Themes & Plugins", "description": "Bespoke WordPress extensions built to your exact requirements." },
+      { "title": "Admin Dashboard Development", "description": "Internal tools and dashboards for managing data, users, and operations." },
+      { "title": "CRM & Client Portal Development", "description": "Custom portals for client management, support, and self-service." },
+      { "title": "E-commerce Development", "description": "End-to-end online stores with secure checkout and inventory management." }
+    ]
+  },
+  {
+    "id": "backend-development",
+    "icon": "backend",
+    "title": "Backend Development",
+    "summary": "Robust, scalable backend systems built in whichever language and framework fits your stack.",
+    "items": [
+      { "title": "Node.js Development", "description": "High-performance REST/GraphQL APIs and services built on Node.js and Express." },
+      { "title": "Python Development", "description": "Backend services, automation, and data-driven applications built in Python." },
+      { "title": "Django Development", "description": "Secure, batteries-included backend applications built with Django." },
+      { "title": "PHP Development", "description": "Robust backend systems, APIs, and integrations built in PHP." },
+      { "title": "REST API Integration", "description": "Connecting your product to third-party services and internal systems." },
+      { "title": "Database Architecture", "description": "Schema design for correctness, performance, and future growth." }
+    ]
+  },
+  {
+    "id": "devops-cloud",
+    "icon": "cloud",
+    "title": "DevOps & Cloud Infrastructure",
+    "summary": "Automated pipelines, containerized deployments, and cloud infrastructure that scale without manual intervention.",
+    "items": [
+      { "title": "CI/CD Pipeline Implementation", "description": "Automated build, test, and deploy pipelines for every push." },
+      { "title": "Jenkins Automation", "description": "Custom Jenkins pipelines for build and release automation." },
+      { "title": "Docker Containerization", "description": "Packaging applications into portable, reproducible containers." },
+      { "title": "Kubernetes Deployment", "description": "Orchestrated, self-healing deployments at scale." },
+      { "title": "AWS Infrastructure", "description": "EC2, S3, RDS, Lambda, and IAM-based infrastructure on AWS." },
+      { "title": "Azure Cloud Services", "description": "Cloud infrastructure and deployments on Microsoft Azure." },
+      { "title": "Linux Server Administration", "description": "Provisioning, hardening, and maintaining Linux servers." },
+      { "title": "Nginx & Apache Configuration", "description": "Reverse proxies, load balancing, and web server tuning." },
+      { "title": "GitHub Actions", "description": "CI/CD workflows integrated directly into your GitHub repository." },
+      { "title": "Infrastructure Automation", "description": "Repeatable, scripted infrastructure provisioning." },
+      { "title": "Terraform", "description": "Infrastructure as code for reproducible cloud environments." },
+      { "title": "Ansible", "description": "Configuration management and automated server provisioning." },
+      { "title": "Monitoring & Logging", "description": "Observability into application health, errors, and performance." }
+    ]
+  },
+  {
+    "id": "hosting-deployment",
+    "icon": "server",
+    "title": "Hosting & Deployment Solutions",
+    "summary": "Reliable, secure hosting setup and ongoing operational support for production systems.",
+    "items": [
+      { "title": "Website Hosting Setup", "description": "End-to-end setup of production hosting environments." },
+      { "title": "VPS & Cloud Server Setup", "description": "Provisioning and configuring virtual private servers." },
+      { "title": "Shared Hosting Configuration", "description": "Deployment and configuration on shared hosting platforms." },
+      { "title": "Domain & DNS Management", "description": "Domain registration, DNS records, and routing configuration." },
+      { "title": "SSL Certificate Configuration", "description": "HTTPS setup and certificate renewal automation." },
+      { "title": "Server Migration", "description": "Zero-downtime migration between hosts and providers." },
+      { "title": "Production Deployment", "description": "Safe, repeatable deployment of production releases." },
+      { "title": "Performance Optimization", "description": "Caching, bundling, and server tuning for faster response times." },
+      { "title": "Website Security", "description": "Hardening servers and applications against common threats." },
+      { "title": "Backup & Recovery", "description": "Automated backup strategies and disaster recovery planning." },
+      { "title": "Server Troubleshooting", "description": "Diagnosing and resolving production incidents quickly." }
+    ]
+  },
+  {
+    "id": "architecture-solutions",
+    "icon": "architecture",
+    "title": "Software Architecture & Complete Solutions",
+    "summary": "Owning the entire software lifecycle — from system design to a running production system — not just writing code.",
+    "items": [
+      { "title": "Complete System Architecture", "description": "Designing the full system before a single line of code is written." },
+      { "title": "Frontend & Backend Architecture", "description": "Coherent architecture spanning both client and server." },
+      { "title": "Database Design", "description": "Normalized, performant schemas designed for your access patterns." },
+      { "title": "API Architecture", "description": "Well-structured, versioned, documented APIs." },
+      { "title": "Authentication & Authorization", "description": "Secure identity, session, and role-based access control." },
+      { "title": "Admin Dashboard Architecture", "description": "Structuring internal tools for scale and maintainability." },
+      { "title": "Multi-User Application Development", "description": "Systems built around roles, permissions, and tenancy from day one." },
+      { "title": "Third-Party Service Integration", "description": "Payments, messaging, analytics, and other external services." },
+      { "title": "Chatbot Development", "description": "Custom chatbots and AI assistants integrated into your website or product." },
+      { "title": "Cloud Architecture", "description": "Designing infrastructure for availability, cost, and scale." },
+      { "title": "Scalable Infrastructure Design", "description": "Architectures that grow with traffic instead of breaking under it." },
+      { "title": "End-to-End Project Implementation", "description": "Taking a project from a blank page to a live, monitored production system." }
+    ]
+  }
+]

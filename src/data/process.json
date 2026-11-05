@@ -1,0 +1,11 @@
+[
+  { "step": 1, "title": "Requirement Analysis", "description": "Understanding your business goals, users, and constraints before any design or code decisions are made." },
+  { "step": 2, "title": "Planning & Architecture", "description": "Defining the system architecture, data model, and technology choices up front, so the project is built on solid foundations." },
+  { "step": 3, "title": "UI/UX Design", "description": "Designing clear, usable interfaces and flows that match how your users actually work." },
+  { "step": 4, "title": "Frontend Development", "description": "Building a responsive, component-based frontend with clean, maintainable code." },
+  { "step": 5, "title": "Backend & Database Development", "description": "Implementing APIs, business logic, and a database schema designed for correctness and scale." },
+  { "step": 6, "title": "Integration & Testing", "description": "Wiring everything together and verifying it under realistic conditions before release." },
+  { "step": 7, "title": "CI/CD Configuration", "description": "Automating builds, tests, and deployments so releases are fast and repeatable." },
+  { "step": 8, "title": "Deployment & Hosting", "description": "Provisioning infrastructure and shipping the application to a secure, production-ready environment." },
+  { "step": 9, "title": "Monitoring & Maintenance", "description": "Keeping the system observable, secure, and healthy long after launch." }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "Akhilesh Ravuri",
+  "role": "Full-Stack Developer · DevOps & Cloud Engineer · Solutions Architect",
+  "tagline": "Complete technology solutions, from architecture to production.",
+  "location": "Available for remote & on-site engagements worldwide",
+  "email": "akhileshravuri2001.freelancing@gmail.com",
+  "whatsapp": "https://wa.me/917095643856?text=Hi%20Akhilesh%2C%20I%27d%20like%20to%20discuss%20a%20project.",
+  "resumeUrl": "#",
+  "hero": {
+    "eyebrow": "Freelance Developer · Full-Stack · DevOps · Cloud",
+    "headline": "Building Digital Products. Engineering Scalable Systems. Delivering Complete Technology Solutions.",
+    "description": "Looking for a freelance developer who builds your website or application exactly the way you want it — not from a rigid template? I design and build fully custom websites, web apps, and digital products, backed by the DevOps and cloud infrastructure to actually run them in production.",
+    "primaryCta": { "label": "View My Work", "href": "#/projects" },
+    "secondaryCta": { "label": "Hire Me for Your Project", "href": "#contact" },
+    "tertiaryCta": { "label": "Explore Services", "href": "#services" }
+  },
+  "about": {
+    "heading": "A freelance developer who builds your site exactly how you want it.",
+    "summary": "I work directly with you — no account managers, no rigid packages — to design, build, and ship a website or application that's fully customized to your business, not assembled from a template.",
+    "paragraphs": [
+      "As an independent freelancer, you work with me directly from the first conversation to the final deployment — your requirements shape the build, not a predefined package.",
+      "Most freelancers hand off a website and walk away. I treat every engagement as a complete system: properly architected, fully customizable, version-controlled, and built to scale past the first release — with the DevOps and cloud infrastructure to actually keep it running.",
+      "Whether it's a custom website, a full web application, or a cloud-hosted production system, my goal is the same — build it exactly the way you need it, and ship something reliable and genuinely production-ready."
+    ],
+    "highlights": [
+      "Direct, one-on-one collaboration — you work with me, not a team",
+      "Fully custom builds, not templates or rigid packages",
+      "End-to-end ownership from architecture to deployment",
+      "CI/CD, containers, and cloud platforms as a default, not an afterthought"
+    ]
+  },
+  "social": [
+    { "label": "Email", "url": "mailto:akhileshravuri2001.freelancing@gmail.com", "icon": "email" },
+    { "label": "WhatsApp", "url": "https://wa.me/917095643856", "icon": "whatsapp" }
+  ]
+}

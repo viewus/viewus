@@ -1,0 +1,37 @@
+.section {
+  padding-block: clamp(5rem, 14vw, 9rem);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: clamp(3rem, 10vw, 5rem);
+  font-weight: 700;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--color-text);
+}
+
+.description {
+  margin-top: 1rem;
+  max-width: 480px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.25rem;
+}

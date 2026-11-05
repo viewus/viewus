@@ -1,0 +1,104 @@
+.button {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 94;
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+  padding: 0;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid var(--color-border-strong);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  max-width: 56px;
+  transition: max-width 0.35s var(--ease-out), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.button:hover {
+  max-width: 220px;
+  border-color: var(--color-primary-strong);
+  box-shadow: var(--shadow-glow), var(--shadow-lg);
+}
+
+.iconWrap {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  background: #25d366;
+  color: #04070d;
+}
+
+.ring {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-full);
+  background: #25d366;
+  opacity: 0.55;
+  animation: pulse-ring 2.6s ease-out infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.45;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.label {
+  white-space: nowrap;
+  padding-right: 1.25rem;
+  padding-left: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+  opacity: 0;
+  transition: opacity 0.25s var(--ease-out) 0.1s;
+}
+
+.button:hover .label {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ring {
+    animation: none;
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .button {
+    right: 1rem;
+    bottom: calc(5.75rem + env(safe-area-inset-bottom, 0px));
+    height: 50px;
+    max-width: 50px;
+  }
+
+  .iconWrap {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Expanding label on tap is awkward on touch devices; keep it compact. */
+  .button:active {
+    max-width: 50px;
+  }
+
+  .label {
+    display: none;
+  }
+}

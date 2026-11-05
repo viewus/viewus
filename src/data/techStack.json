@@ -1,0 +1,83 @@
+[
+  {
+    "id": "frontend",
+    "title": "Frontend",
+    "items": [
+      { "name": "React", "icon": "SiReact" },
+      { "name": "TypeScript", "icon": "SiTypescript" },
+      { "name": "JavaScript", "icon": "SiJavascript" },
+      { "name": "HTML5", "icon": "SiHtml5" },
+      { "name": "CSS3", "icon": "SiCss" },
+      { "name": "Vite", "icon": "SiVite" },
+      { "name": "Tailwind CSS", "icon": "SiTailwindcss" }
+    ]
+  },
+  {
+    "id": "backend",
+    "title": "Backend",
+    "items": [
+      { "name": "Node.js", "icon": "SiNodedotjs" },
+      { "name": "Express", "icon": "SiExpress" },
+      { "name": "PHP", "icon": "SiPhp" },
+      { "name": "WordPress", "icon": "SiWordpress" },
+      { "name": "Python", "icon": "SiPython" }
+    ]
+  },
+  {
+    "id": "databases",
+    "title": "Databases",
+    "items": [
+      { "name": "MySQL", "icon": "SiMysql" },
+      { "name": "PostgreSQL", "icon": "SiPostgresql" },
+      { "name": "MongoDB", "icon": "SiMongodb" },
+      { "name": "Redis", "icon": "SiRedis" }
+    ]
+  },
+  {
+    "id": "devops",
+    "title": "DevOps",
+    "items": [
+      { "name": "Docker", "icon": "SiDocker" },
+      { "name": "Kubernetes", "icon": "SiKubernetes" },
+      { "name": "Jenkins", "icon": "SiJenkins" },
+      { "name": "GitHub Actions", "icon": "SiGithubactions" },
+      { "name": "Terraform", "icon": "SiTerraform" },
+      { "name": "Ansible", "icon": "SiAnsible" }
+    ]
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud Platforms",
+    "items": [
+      { "name": "AWS", "icon": "FaAws" }
+    ]
+  },
+  {
+    "id": "infrastructure",
+    "title": "Infrastructure",
+    "items": [
+      { "name": "Nginx", "icon": "SiNginx" },
+      { "name": "Apache", "icon": "SiApache" },
+      { "name": "Linux", "icon": "SiLinux" },
+      { "name": "Ubuntu", "icon": "SiUbuntu" }
+    ]
+  },
+  {
+    "id": "monitoring",
+    "title": "Monitoring",
+    "items": [
+      { "name": "Grafana", "icon": "SiGrafana" },
+      { "name": "Prometheus", "icon": "SiPrometheus" }
+    ]
+  },
+  {
+    "id": "tools",
+    "title": "Development Tools",
+    "items": [
+      { "name": "Git", "icon": "SiGit" },
+      { "name": "GitHub", "icon": "SiGithub" },
+      { "name": "VS Code", "icon": "VscVscode" },
+      { "name": "Postman", "icon": "SiPostman" }
+    ]
+  }
+]
